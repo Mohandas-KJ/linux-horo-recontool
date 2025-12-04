@@ -24,3 +24,14 @@ echo
 echo "[MEMORY]"
 free -h
 echo 
+
+echo "[DISK]"
+df -h /
+echo
+
+echo "[NETWORK]"
+echo "Public IP: $(curl -s https://ifconfig.co | tr -s ' \n')"
+echo "Machine IP (IPv4): $(hostname -I)"
+echo
+
+echo "END OF HOROSCOPE!"
