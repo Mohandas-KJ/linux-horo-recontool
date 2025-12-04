@@ -19,3 +19,8 @@ echo "Architecture: $(lscpu | grep "Architecture:" | tr -s ' ' | cut -d: -f2)"
 echo "Operation Modes: $(lscpu | grep "CPU op-mode(s):" | tr -s ' ' | cut -d: -f2)"
 echo "Byte Order: $(lscpu | grep "Byte Order:" | tr -s ' ' | cut -d: -f2)"
 echo "Number of Sockets: $(lscpu | grep "Socket(s):" | tr -s ' ' | cut -d: -f2)"
+echo 
+
+echo "[MEMORY]"
+free -h
+echo 
